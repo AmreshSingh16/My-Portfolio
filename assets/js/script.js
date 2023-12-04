@@ -54,7 +54,9 @@ document.addEventListener('visibilitychange',
     });
 
 
-// <!-- typed js effect starts -->
+
+
+
 var typed = new Typed(".typing-text", {
     strings: ["frontend development", "backend development"],
     loop: true,
@@ -62,7 +64,7 @@ var typed = new Typed(".typing-text", {
     backSpeed: 25,
     backDelay: 500,
 });
-// <!-- typed js effect ends -->
+
 
 
 
@@ -90,13 +92,11 @@ function showProjects(projects) {
     });
     projectsContainer.innerHTML = projectHTML;
 
-    // <!-- tilt js effect starts -->
+
     VanillaTilt.init(document.querySelectorAll(".tilt"), {
         max: 15,
     });
-    // <!-- tilt js effect ends -->
-
-    /* ===== SCROLL REVEAL ANIMATION ===== */
+    
     const srtop = ScrollReveal({
         origin: 'top',
         distance: '80px',
@@ -104,30 +104,18 @@ function showProjects(projects) {
         reset: true
     });
 
-    /* SCROLL PROJECTS */
+    
     srtop.reveal('.work .box', { interval: 200 });
 
 }
 
 
-// <!-- tilt js effect starts -->
+
+
 VanillaTilt.init(document.querySelectorAll(".tilt"), {
     max: 15,
 });
-// <!-- tilt js effect ends -->
 
-
-// pre loader start
-// function loader() {
-//     document.querySelector('.loader-container').classList.add('fade-out');
-// }
-// function fadeOut() {
-//     setInterval(loader, 500);
-// }
-// window.onload = fadeOut;
-// pre loader end
-
-// disable developer mode
 document.onkeydown = function (e) {
     if (e.keyCode == 123) {
         return false;
@@ -156,10 +144,7 @@ var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
     s1.setAttribute('crossorigin', '*');
     s0.parentNode.insertBefore(s1, s0);
 })();
-// End of Tawk.to Live Chat
 
-
-/* ===== SCROLL REVEAL ANIMATION ===== */
 const srtop = ScrollReveal({
     origin: 'top',
     distance: '80px',
